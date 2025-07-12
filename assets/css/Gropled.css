@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Gropled';
+	src: url(../../assets/fonts/Gropled-45259bee47986b0b300a4159ed016a35.woff2) format('woff2'),
+	url(../../assets/fonts/Gropled-756f8eb05c931f621f7ca8e5b4dda891.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

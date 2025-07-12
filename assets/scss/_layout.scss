@@ -1,0 +1,253 @@
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-light;
+  background-image: url(Topographic-5.svg);
+  background-size: 100%;
+  background-position-y: -300px;
+  font-size: 16px;
+  font-family: $font-default;
+}
+
+body>.container[class*="-box"]:not(.hero-box) {
+  margin-top: 64px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: $font-primary;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.h1 {
+  font-size: $font-32x64;
+}
+
+.h2 {
+  font-size: $font-28x40;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+  width: min(460px, 100%);
+
+  li {
+    width: 120px;
+  }
+
+  a {
+    color: $color-default;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: center;
+    height: 40px;
+    padding: 2px 16px;
+    border-radius: $radius-big;
+    width: fit-content;
+    border: 1px solid $color-lighter;
+    transition: background-color .15s ease-in-out;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: $color-primary;
+      color: $color-inverse;
+    }
+  }
+}
+
+// Buttons
+.btn-btn {
+  position: relative;
+  background-color: $color-primary;
+  color: $color-light;
+  font-family: $font-primary;
+  font-size: 1rem;
+  height: 52px;
+  line-height: 1.1;
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  padding: 2px 16px 2px 24px;
+  white-space: nowrap;
+  border-radius: 40px;
+  transition: background-image .25s ease-in-out;
+
+  @media (max-width: 360px) {
+    white-space: normal;
+  }
+
+  &.btn-icon::after {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    min-width: 48px;
+    height: 20px;
+    background: url("icon-btn-white.svg") center center no-repeat;
+  }
+
+  &.btn-icon:active,
+  &.btn-icon:focus,
+  &.btn-icon:hover {
+    background-color: $color-primary;
+    color: $color-light;
+
+    &::after {
+      background-image: url("icon-btn-green.svg");
+    }
+  }
+
+  &.btn-inverse {
+    background-color: $color-light;
+    color: $color-primary;
+  }
+
+  &.btn-icon.btn-inverse::after {
+    background: url("icon-btn-green.svg") center center no-repeat;
+  }
+
+  &.btn-icon.btn-inverse:active,
+  &.btn-icon.btn-inverse:focus,
+  &.btn-icon.btn-inverse:hover {
+    background-color: $color-light;
+    color: $color-primary;
+
+    &::after {
+      background-image: url("icon-btn-white.svg");
+    }
+  }
+}
+
+.check-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: nowrap;
+  font-size: $font-18x21;
+
+  &:has(span) {
+    flex-wrap: wrap;
+  }
+
+  span {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-right: 2rem;
+  }
+}
+
+.form-check {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5em;
+  padding-left: 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(checkoff-white.svg);
+  }
+
+  &:has(.form-check-input:checked) {
+    &::before {
+      background-image: url(check-white.svg);
+    }
+  }
+
+  &>.form-check-input {
+    opacity: 0;
+    margin-left: 0;
+    position: absolute;
+    z-index: 10;
+    width: 26px;
+    height: 26px;
+  }
+
+  label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    line-height: 1.1;
+    min-height: 26px;
+    cursor: pointer;
+  }
+}
+
+.form-section {
+  .form--content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .form-control {
+    border-radius: $radius-big;
+    height: 40px;
+    border: none;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+textarea.form-control::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+textarea.form-control::-moz-placeholder {
+  opacity: .5;
+}
+
+textarea.form-control::-ms-input-placeholder {
+  opacity: .5;
+}
+
+input.form-control::placeholder {
+  opacity: .5;
+}
+
+input.form-control::-webkit-placeholder {
+  opacity: .5;
+}
+
+input.form-control::-moz-placeholder {
+  opacity: .5;
+}
+
+input.form-control::-ms-input-placeholder {
+  opacity: .5;
+}

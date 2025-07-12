@@ -1,0 +1,18 @@
+$font-default: "Tilda Sans VF", sans-serif;
+$font-primary: "Gropled", sans-serif;
+
+$color-primary: #1F8B48;
+$color-default: #131312;
+$color-inverse: #ffffff;
+$color-passive: #969594;
+$color-light: #F6F6F6;
+$color-lighter: #e7e7e7;
+
+$radius-default: 24px;
+$radius-big: 40px;
+
+$padd-24x64: clamp(1.5rem, -0.2143rem + 5.7143vw, 4rem);
+
+$font-32x64: clamp(2rem, 1.2558rem + 3.7209vw, 4rem);
+$font-28x40: clamp(1.75rem, 1.2692rem + 2.0513vw, 2.5rem);
+$font-18x21: clamp(1.125rem, 1.0128rem + 0.4786vw, 1.3rem);

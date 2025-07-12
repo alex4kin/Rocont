@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Tilda Sans VF';
+	src: url(../../assets/fonts/Tilda%20Sans%20VF-95cfd007cc89ba0e24ac34bd1d00c2dd.woff2) format('woff2'),
+	url(../../assets/fonts/Tilda%20Sans%20VF-33f0a8ca95d2862a0969e584abce216c.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

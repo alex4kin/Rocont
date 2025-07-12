@@ -1,3 +1,2 @@
 # Rocont
-From Figma to HTML
-Based on Bootstrap
+From Figma to HTML, Based on Bootstrap.

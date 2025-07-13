@@ -84,7 +84,7 @@ p {
   display: flex;
   gap: 0.5em;
   align-items: center;
-  padding: 2px 16px 2px 24px;
+  padding: 8px 16px 8px 24px;
   white-space: nowrap;
   border-radius: 40px;
   transition: background-image 0.25s ease-in-out;
@@ -532,6 +532,7 @@ header .navbar-nav .nav-link.active, header .navbar-nav .nav-link:hover {
   .form-section .form--heading,
   .form-section .form--content {
     width: 100%;
+    margin-top: 0;
   }
 }
 
